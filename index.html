@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <!-- header section -->
+        <div class="header">
+          <div class="headerLeft">
+            <img src="./images/logo.svg" alt="" class="logo" />
+            <div class="navs">
+              <p class="navText" onclick="dropdown('drop1' ,'arrow1')">
+                Features
+                <span
+                  ><img
+                    src="./images/icon-arrow-down.svg"
+                    class="arrow"
+                    id="arrow1"
+                    alt=""
+                /></span>
+              </p>
+              <p class="navText" onclick="dropdown('drop2', 'arrow2')">
+                Company
+                <span
+                  ><img
+                    src="./images/icon-arrow-down.svg"
+                    class="arrow"
+                    id="arrow2"
+                    alt=""
+                /></span>
+              </p>
+              <p class="navText">Careers</p>
+              <p class="navText">About</p>
+            </div>
+          </div>
+          <div class="headerRight">
+            <p class="navText">Login</p>
+            <button class="RegisterBtn">Register</button>
+          </div>
+        </div>
+        <!-- header section ends here -->
+        <!-- main section starts here -->
+        <div class="main">
+          <div class="mainLeft">
+            <!-- drop down menu -->
+            <div class="dropHolder">
+              <div class="drop1" id="drop1">
+                <div class="dropItem">
+                  <img src="./images/icon-todo.svg" alt="" />
+                  <p class="drop-text">Todo List</p>
+                </div>
+                <div class="dropItem">
+                  <img src="./images/icon-calendar.svg" alt="" />
+                  <p class="drop-text">Calendar</p>
+                </div>
+                <div class="dropItem">
+                  <img src="./images/icon-reminders.svg" alt="" />
+                  <p class="drop-text">Reminders</p>
+                </div>
+                <div class="dropItem">
+                  <img src="./images/icon-planning.svg" alt="" />
+                  <p class="drop-text">Plannings</p>
+                </div>
+              </div>
+              <div class="drop2" id="drop2">
+                <p class="drop-text">History</p>
+                <p class="drop-text">our Team</p>
+                <p class="drop-text">Blog</p>
+              </div>
+            </div>
+            <p class="main-text">
+              Make <br />
+              remote work
+            </p>
+            <p class="main-subText">
+              Get your team in sync, no matter your location. Streamline
+              processes, create team rituals, and watch productivity soar.
+            </p>
+            <button class="RegisterBtn btn-edit">Learn more</button>
+            <div class="footer-image">
+              <img src="./images/client-databiz.svg" alt="" />
+              <img src="./images/client-audiophile.svg" alt="" />
+              <img src="./images/client-meet.svg" alt="" />
+              <img src="./images/client-maker.svg" alt="" />
+            </div>
+          </div>
+          <div class="mainRight">
+            <img src="./images/image-hero-desktop.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

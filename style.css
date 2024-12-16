@@ -1,0 +1,186 @@
+* {
+  font-family: "Epilogue", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: hsl(0, 0%, 98%);
+  display: flex;
+  justify-content: center;
+}
+.wrapper {
+  width: 96%;
+  height: 100%;
+  /* background-color: brown; */
+}
+.header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: rgb(165, 190, 162); */
+}
+.headerLeft {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  height: 25px;
+}
+.navs {
+  display: flex;
+  gap: 3em;
+}
+.headerRight {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+.RegisterBtn {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid hsl(0, 0%, 41%);
+  border-radius: 10px;
+  height: 30px;
+  width: 80px;
+  color: hsl(0, 0%, 41%);
+}
+.navText {
+  font-size: 0.9rem;
+  color: hsl(0, 0%, 41%);
+}
+.navText:hover {
+  color: hsl(0, 0%, 8%);
+}
+.arrow:hover {
+  color: hsl(0, 0%, 8%);
+}
+
+.RegisterBtn:hover {
+  border: 1px solid hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 8%);
+}
+/* header ending */
+/* main starting */
+.main {
+  width: 100%;
+  height: 85%;
+  display: flex;
+  align-items: center;
+  /* background-color: bisque; */
+}
+.mainLeft {
+  width: 50%;
+  height: 100%;
+  /* background-color: darkgoldenrod; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.dropHolder {
+  display: flex;
+  align-self: flex-start;
+}
+.drop1 {
+  width: 140px;
+  height: 150px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: white;
+  display: none;
+  position: absolute;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 4.6rem;
+  box-shadow: 0.2px 0.2px 10px -7px;
+}
+
+.dropItem {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.drop-text {
+  font-size: 0.9rem;
+  color: hsl(0, 0%, 41%);
+}
+.drop2 {
+  background-color: white;
+  width: 120px;
+  height: 130px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 15px;
+  position: absolute;
+  z-index: 1;
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 15.5rem;
+  box-shadow: 0.2px 0.2px 10px -7px;
+}
+.main-text {
+  font-size: 3.2rem;
+  font-weight: 800;
+  margin-right: 4.5rem;
+  margin-top: 10.5rem;
+  color: hsl(0, 0%, 8%);
+}
+.main-subText {
+  width: 63%;
+  color: hsl(0, 0%, 41%);
+  margin-top: 2.3rem;
+  margin-bottom: 2.3rem;
+}
+.btn-edit {
+  width: 120px;
+  height: 40px;
+  margin-right: 45%;
+  margin-bottom: 10%;
+}
+.footer-image {
+  width: 68%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* main right  */
+.mainRight {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainRight img {
+  width: 60%;
+}
+/* drop down animation */
+@keyframes drop {
+  from {
+    transform: translateY(-60px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.show {
+  display: flex;
+  animation: drop 0.2s ease-in;
+}
+.hide {
+  animation: drop 0.5s ease-in 0s 1 reverse;
+  opacity: 0;
+  visibility: hidden;
+}
+.turn {
+  transform: rotate(180deg);
+  transition: all 0.2s ease-in-out;
+}
